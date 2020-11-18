@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript" src="twitchEmbed.js"></script>  
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 </head>
 <body>
 
-<h1>LiterallyRay Media</h1>
-<p><a href="https://www.twitter.com/LiterallyRay">LiterallyRay on Twitter</a></p>
+    <h1>LiterallyRay Media</h1>
+    <p><a href="https://www.twitter.com/LiterallyRay">LiterallyRay on Twitter</a></p>
 
-<div id="twitch-embed" style="height: 720px"></div>
+    <div id="twitch-embed"></div>
 
-<p>"Twitch Embed above!"</p>
+
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "literallyray"
+        });
+    </script>
+
+    <p>"Twitch Embed above!"</p>
+
 </body>
 </html> 

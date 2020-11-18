@@ -1,10 +1,11 @@
 ﻿body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: blanchedalmond;
-    height: 259px;
+    background-color: whitesmoke;
+    height: 113px;
 }
 
 twitch-embed {
     align-content: center;
+    height: 720px;
 }
