@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<!-- LiterallyRayMedia -->
-<!-- Home page of LiterallyRay Media -->
+<!-- LiterallyRay -->
+<!-- Home page of LiterallyRay-->
 <html lang = "en">
 
 <head>
     <meta charset = "utf-8" />
+    <title>LiterallyRay</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script src="twitchEmbed.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <nav>
+        <a href="#twitch-embded">Twitch</a>
+        <a href="#youtube-frame">YouTube</a>
+    </nav>
 
-    <h1>LiterallyRay Media</h1>
-    <p><a href="https://www.twitter.com/LiterallyRay">LiterallyRay on Twitter</a></p>
+    <h1>LiterallyRay (in progress...)</h1>
+    <h2>
+        <a href="https://www.twitter.com/LiterallyRay" class = "fa fa-twitter"></a>
+        <a href="https://www.youtube.com/LiterallyRay"class = "fa fa-youtube"></a>
+    </h2>
     <div id="twitch-embed"></div>
+
+    <div id="youtube-frame">
+    <p> LiterallyRay's most recent upload. </p>
+    <iframe id="ytplayer" type="text/html" width="1280" height="720"
+        src="https://www.youtube.com/embed?listType=user_uploads&list=SngreAzul37&loop=1"
+        frameborder="0">
+    </iframe>
+    </div>
 
     <footer>
         <script src="https://embed.twitch.tv/embed/v1.js"></script>
         <script src="twitchEmbed.js"></script>
     </footer>
 </body>
-
 </html> 

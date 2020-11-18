@@ -1,7 +1,78 @@
-﻿body {
+﻿html, body {
+    background: linear-gradient(180deg, #000000, #23abfc, #000000, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: whitesmoke;
-    height: 188px;
 }
 
+nav a{
+   display: inline-block;
+   padding: 15px;
+}
+
+h2{
+    display: inline-block;
+}
+
+twitch-embed{
+    border: solid;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+youtube-frame p{
+    color: white;
+    font-weight: bold;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
