@@ -1,8 +1,11 @@
 // JavaScript source code
+main();
 
-    new Twitch.Embed("twitch-embed", {
-        width: 1920,
+function main() {
+    new Twitch.Embed((document.getElementById('twitch-embed')), {
+        width: 1280,
         height: 720,
-        channel: "literallyray",
-      });
-    </script>
+        channel: "LiterallyRay",
+    });
+}
+
